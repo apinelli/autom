@@ -1,0 +1,24 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+<br>
+<!-- Button to activate the "/controle" endpoint -->
+<div style="text-align: center; margin-bottom: 20px;">
+  <button id="controleButton" style="font-size: 20px;">Controle Remoto do Portao</button>
+</div>
+<br>
+
+<script>
+$( document ).ready(function(){
+	// Button click event to activate "/controle" endpoint
+    $("#controleButton").on("click", function() {
+      $.get('/controle');
+    });
+});
+</script>
+
+</body>
+</html>
